@@ -5,9 +5,6 @@ import re
 output = open("output_decoded.txt", "r")
 lines = output.readlines()
 
-d1 = datetime(2022, 5, 31)
-d2 = datetime(2022, 6, 2)
-
 for line in lines:
 	pattern = '"nbf":(\d+),"exp":(\d+)'
 	match = re.search(pattern, line)
